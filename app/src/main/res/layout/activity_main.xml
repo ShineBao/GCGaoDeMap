@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/bt_traffic_enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实时交通" />
+
+
+    <ImageView
+        android:id="@+id/locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="50dp"
+        android:src="@mipmap/locate" />
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="10dp"
+        android:layout_height="8dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/shape_shadow_locate" />
+</RelativeLayout>
